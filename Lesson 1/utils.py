@@ -32,6 +32,7 @@ from theano.tensor.signal import pool
 
 import keras
 from keras import backend as K
+from keras import initializations
 from keras.utils.data_utils import get_file
 from keras.utils import np_utils
 from keras.utils.np_utils import to_categorical
@@ -42,8 +43,9 @@ from keras.layers.core import Flatten, Dense, Dropout, Lambda
 from keras.regularizers import l2, l1
 from keras.layers.normalization import BatchNormalization
 from keras.optimizers import SGD, RMSprop, Adam
-#from keras.utils.layer_utils import layer_from_config
-from keras.layers import deserialize as layer_from_config
+from keras.utils.layer_utils import layer_from_config
+#from keras.layers import deserialize as layer_from_config
+#layer_from_config = keras.layers.deserialize
 from keras.metrics import categorical_crossentropy, categorical_accuracy
 from keras.layers.convolutional import *
 from keras.preprocessing import image, sequence
