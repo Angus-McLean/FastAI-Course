@@ -32,7 +32,7 @@ from theano.tensor.signal import pool
 
 import keras
 from keras import backend as K
-from keras import initializations
+#from keras import initializations
 from keras.utils.data_utils import get_file
 from keras.utils import np_utils
 from keras.utils.np_utils import to_categorical
