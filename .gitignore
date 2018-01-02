@@ -3,3 +3,4 @@ Videos
 **/data
 *.pyc
 __pycache__/
+*.h5
